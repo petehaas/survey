@@ -1,0 +1,15 @@
+capsule {
+  id (playground.dutchcowboy)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+  }
+  runtime-version (2) {
+    overrides {
+  
+      allow-dialogs-on-detail-pages (true)
+      
+    }
+  }
+}

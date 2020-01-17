@@ -1,0 +1,21 @@
+action (GetResponse) {
+  type(Calculation)
+  description (Similar to Google form)
+  collect {
+   
+    input (name) {
+      type (Name)
+      min (Required) max (One)
+    }
+     input (q1) {
+      type (Q1)
+      min (Required) max (One)
+    }
+     input (q2) {
+      type (Q2)
+      min (Required) max (One)
+    }
+  }
+
+  output (Response)
+}

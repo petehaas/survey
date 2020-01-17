@@ -1,0 +1,39 @@
+result-view {
+  match: Response(this)
+
+  render {
+    layout {
+      section {
+        content {
+         
+          image {
+            aspect-ratio(One_One)
+            lightbox-enabled (false)
+            url("#{value(this.image)}")
+          }
+
+          partitioned {
+            content {
+              single-line {
+                text {
+                  color (Amber)
+                  value("Q1: #{value(this.q1)}")
+                }
+              }
+            }
+          }
+            partitioned {
+            content {
+              single-line {
+                text {
+                  color (Amber)
+                  value("Q2: #{value(this.q2)}")
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

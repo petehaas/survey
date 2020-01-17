@@ -1,0 +1,11 @@
+endpoints {
+  action-endpoints {
+    // Uncomment the lines below and enter the information for actions, inputs, and the appropriate local or remote endpoints
+    action-endpoint (GetResponse) {
+      accepted-inputs (name, q1, q2)
+      local-endpoint (getResponse.js)
+    }
+
+   
+  }
+}

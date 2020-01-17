@@ -1,0 +1,26 @@
+structure (Response) {
+  description (Result from survey)
+ 
+   property (name) {
+    type (Name)
+    min (Required) max (One)
+  }
+
+   property (q1) {
+    type (Q1)
+    min (Required) max (One)
+  }
+
+   property (q2) {
+    type (Q2)
+    min (Required) max (One)
+  }
+
+  property (image) {
+    description (dynamic image created from questions)
+    type (viv.core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+
+}

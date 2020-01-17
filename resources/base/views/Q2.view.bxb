@@ -1,0 +1,26 @@
+input-view {
+  match {
+    Q2 (question) 
+  }
+
+  message {
+    template ("Second question...")
+  }
+
+  render {
+    form {
+      elements {
+        switch-input {
+          id (q2)
+          type (Q2)
+          primary-text("blah blah blah")
+          secondary-text("Long description")
+        }
+      }
+      on-submit {
+        goal: Q2
+        value: viv.core.FormElement(q2)
+      }
+    }
+  }
+}

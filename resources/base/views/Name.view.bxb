@@ -1,0 +1,24 @@
+input-view {
+  match {
+    Name (name) 
+  }
+  message {
+    template ("What is your name?")
+  }
+  render {
+    form {
+      elements {
+        text-input {
+          id (name)
+          label (Your Name)
+          type (Name)
+          max-length (50)
+        }
+      }
+      on-submit {
+        goal: Name
+        value: viv.core.FormElement(name)
+      }
+    }
+  }
+}
