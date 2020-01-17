@@ -13,7 +13,14 @@ action (GetResponse) {
     }
      input (q2) {
       type (Q2)
-      min (Required) max (One)
+      min (Optional) max (One)
+      validate {
+        // Only ask when previous question is true
+        if(q1) {
+          prompt
+        }
+
+      }
     }
   }
 
